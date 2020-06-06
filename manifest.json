@@ -3,12 +3,14 @@
     "version": "1.0",
     "description": "Easy sharing!",
     "permissions": [
+        "tabs",
         "storage",
         "declarativeContent"
     ],
     "background": {
         "scripts": [
-            "background.js"
+            "js/background.js",
+            "js/logic.js"
         ],
         "persistent": false
     },

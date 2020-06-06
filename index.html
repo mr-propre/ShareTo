@@ -5,6 +5,7 @@
     <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.0" />
     <title>ShareTo - Easy Sharing</title>
+    <script src="js/jquery.min.js"></script>
 
     <!-- CSS  -->
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
@@ -24,7 +25,8 @@
                     </h1>
                 </div>
                 <div class="row center">
-                    <p class="header col s12" style="font-size: small;">Based on most used and recents in the <a href="history.html">share history</a></p>
+                    <p class="header col s12" style="font-size: small;">Based on most used and recents in the <a
+                            href="history.html">share history</a></p>
                 </div>
                 <br><br>
             </div>
@@ -36,30 +38,30 @@
             <div class="section">
                 <!--   Icon Section   -->
                 <div class="row">
-                    <div class="waves-effect waves-light col s3 l1">
+                    <div class="waves-effect waves-light col s3 l1" id="facebook">
                         <img src="images/facebook-logo.svg" alt="facebook logo" style="height: 40px;">
                     </div>
-                    <div class="waves-effect waves-light col s3 l1">
+                    <div class="waves-effect waves-light col s3 l1" id="messenger">
                         <img src="images/messenger-logo.svg" alt="messenger logo" style="height: 40px;">
                     </div>
-                    <div class="waves-effect waves-light col s3 l1">
+                    <div class="waves-effect waves-light col s3 l1" id="twitter">
                         <img src="images/twitter-logo.svg" alt="twitter logo" style="height: 40px;">
                     </div>
-                    <div class="waves-effect waves-light col s3 l1">
+                    <div class="waves-effect waves-light col s3 l1" id="vk">
                         <img src="images/vk-logo.svg" alt="vk logo" style="height: 40px;">
                     </div>
                 </div>
                 <div class="row">
-                    <div class="waves-effect waves-light col s3 l1">
+                    <div class="waves-effect waves-light col s3 l1" id="externalEmail">
                         <img src="images/email.svg" alt="email logo" style="height: 40px;">
                     </div>
-                    <div class="waves-effect waves-light col s3 l1">
+                    <div class="waves-effect waves-light col s3 l1" id="outlook">
                         <img src="images/outlook-logo.svg" alt="outlook logo" style="height: 40px;">
                     </div>
-                    <div class="waves-effect waves-light col s3 l1">
+                    <div class="waves-effect waves-light col s3 l1" id="gmail">
                         <img src="images/gmail-logo.svg" alt="gmail logo" style="height: 40px;">
                     </div>
-                    <div class="waves-effect waves-light col s3 l1">
+                    <div class="waves-effect waves-light col s3 l1" id="reddit">
                         <img src="images/reddit-logo.svg" alt="reddit logo" style="height: 40px;">
                     </div>
                 </div>
@@ -86,11 +88,9 @@
         </div>
     </footer>
 
-
     <!--  Scripts-->
-    <script src="js/jquery.min.js"></script>
     <script src="js/materialize.min.js"></script>
-
+    <script src="js/logic.js"></script>
 </body>
 
 </html>

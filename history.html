@@ -36,7 +36,13 @@
             <div class="section">
                 <!--   Icon Section   -->
                 <div class="row">
-                    
+                    <div class="input-field col s12">
+                        <select>
+                            <option value="1" selected>Most Recents</option>
+                            <option value="2">Most Used</option>
+                        </select>
+                        <label>Order by</label>
+                    </div>
                 </div>
 
             </div>
@@ -65,6 +71,12 @@
     <!--  Scripts-->
     <script src="js/jquery.min.js"></script>
     <script src="js/materialize.min.js"></script>
+    <script>
+        document.addEventListener('DOMContentLoaded', function () {
+            var elems = document.querySelectorAll('select');
+            var instances = M.FormSelect.init(elems, options);
+        });
+    </script>
 
 </body>
 

@@ -5,6 +5,7 @@
     <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.0" />
     <title>ShareTo - Easy Sharing</title>
+    <script src="js/jquery.min.js"></script>
 
     <!-- CSS  -->
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
@@ -14,69 +15,64 @@
 
 <body>
     <header>
-        <div class="section no-pad-bot no-pad-top" id="index-banner">
+        <div class="section" id="index-banner" style="margin-bottom: -50px;">
             <div class="container">
-                <br><br>
-                <div style="text-align: center; margin-top: -20px;">
+                <div style="text-align: center;">
                     <img src="images/shareto.svg" alt="shareto-logo" style="height: 30px; vertical-align: middle;">
-                    <h1 class="header center teal-text flow-text" style=" display: inline; vertical-align: middle;">
+                    <h1 class="center teal-text flow-text" style=" display: inline; vertical-align: middle;">
                         ShareTo
                     </h1>
                 </div>
                 <div class="row center">
-                    <p class="header col s12" style="font-size: small;">Share History</p>
+                    <p class="col s12 flow-text" style="font-size: small; margin-bottom: 0px;">Sharing History
+                    </p>
+                    <i class="col s12 flow-text" style="font-size: smaller; margin-top: 0px;">(use Ctrl+Click to
+                        open hyperlinks)</i>
                 </div>
-                <br><br>
             </div>
         </div>
     </header>
 
     <main>
-        <div class="container" style="margin-bottom: -30px; margin-top: -30px;">
-            <div class="section">
+        <div class="container" style="margin-bottom: 0px;">
+            <div class="section" style="margin-bottom: -20px;">
                 <!--   Icon Section   -->
-                <div class="row">
-                    <div class="input-field col s12">
-                        <select>
-                            <option value="1" selected>Most Recents</option>
-                            <option value="2">Most Used</option>
-                        </select>
-                        <label>Order by</label>
+                <div class="row center" id="history">
+
+                </div>
+                <div class="row center">
+                    <div class="col s12">
+                        <a href="index.html"
+                            class="waves-effect waves-light btn-small btn-flat orange-text text-lighten-2">
+                            <i class="material-icons left">arrow_back</i>Back
+                        </a>
                     </div>
                 </div>
-
             </div>
-            <br><br>
         </div>
     </main>
 
     <footer class="page-footer teal">
         <div class="container">
             <div class="row">
-                <div class="col 12" style="padding-top: 0px !important;">
+                <div class="col 12" style="padding-top: 0px !important; margin-bottom: -20px; margin-top: -20px;">
                     <h5 class="white-text flow-text">ShareTo - Easy Sharing!</h5>
                     <p class="grey-text text-lighten-4">This is a project for HSE's Programming course.</p>
                 </div>
             </div>
         </div>
-        <div class="footer-copyright">
+        <div class="footer-copyright" style="padding-bottom: 9px;">
             <div class="container">
-                Made by <a class="orange-text text-lighten-3" href="http://github.com/mr-propre/ShareTo">Lucas
-                    Pierru</a>
+                <p ">Made by <a class=" orange-text text-lighten-2" name="test"
+                    href="https://github.com/mr-propre/ShareTo">Lucas
+                    Pierru</a><i> (use Ctrl+Click to open hyperlinks)</i></p>
             </div>
         </div>
     </footer>
 
-
     <!--  Scripts-->
-    <script src="js/jquery.min.js"></script>
     <script src="js/materialize.min.js"></script>
-    <script>
-        document.addEventListener('DOMContentLoaded', function () {
-            var elems = document.querySelectorAll('select');
-            var instances = M.FormSelect.init(elems, options);
-        });
-    </script>
+    <script src="js/history.js"></script>
 
 </body>
 

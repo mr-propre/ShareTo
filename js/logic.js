@@ -4,7 +4,6 @@ $(document).ready(() => {
         var shares = platform + "Shares";
 
         chrome.storage.sync.get(shares, (obj) => {
-            var keyname = platform + (obj[shares] + 1);
             chrome.storage.sync.set({ [shares]: obj[shares] + 1 });
             chrome.tabs.getSelected(null, (tab) => {
                 var currentUrl = tab.url;

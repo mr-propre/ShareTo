@@ -8,11 +8,3 @@ body {
 main {
     flex: 1 0 auto;
 }
-
-.facebook-icon {
-    background-image: url("images/facbook-logo.svg");
-    background-repeat: no-repeat;
-    background-size: cover;
-    height: 20vh;
-    width: 20vh;
-}
